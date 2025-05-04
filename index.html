@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>Personal Portfolio - Hayat Musa</title> <!-- Title of the page -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+<!-- header  -->
+    <header>
+        <h1>Hayat Musa</h1> 
+        <p>Aspiring UI/UX Designer and frontend Developer</p>
+        <img src="images/th.jpeg" alt="hayat musa"> 
+    </header>
+
+
+<!-- nav bar -->
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+<!-- section of introduction -->
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+            Hello! I'm Hayat Musa, an aspiring UI/UX designer and frontend developer. I am passionate about creating user-friendly interfaces and enhancing user experiences through thoughtful design and functionality. I enjoy learning new technologies and continuously improving my skills in the field of web development.
+        </p>
+    </section>
+    
+
+<!-- section of projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+    <!-- article 1 -->
+        <article class="project">
+            <h3>E-commerce Website</h3>
+            <p>
+                This project showcases a fully functional e-commerce website, featuring product listings, a shopping cart, and user authentication. It was built using HTML, CSS, and JavaScript, with a backend powered by Node.js and Express.
+            </p>
+            <a href="https://github.com/nanfii/EcommercePHP" target="_blank">View Project</a>
+        </article>
+
+    <!-- article 2 -->
+
+        <article class="project">
+            <h3>Weather-Dashboard</h3>
+            <p>
+                This project showcases a fully functional weather-dashboard ,thet forcast 5 days wether based on city names and also it fatches the user current city weather using maps. It was built using HTML, tailwindCSS, and react, with a open api.
+            </p>
+            <a href="https://github.com/hayatina/weather-dashboard" target="_blank">View Project</a>
+        </article>
+
+    <!-- article 3 -->
+        <article class="project">
+            <h3>To do list</h3>
+            <p>
+                This project involved designing a user-friendly interface for a mobile application. It focuses on user Interface of To do list  using prototyping tools Figma.
+            </p>
+            <a href="https://www.figma.com/design/wLjZeu69ONfMs2liX67Elo/UI-design-to-do-list?node-id=0-1&t=Dum84j6YqN3flz8U-1" target="_blank">View Project</a>
+        </article>
+
+    </section>
+
+<!-- section of about -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am Hayat Musa, a passionate UI/UX designer and frontend developer with a strong interest in creating intuitive and engaging user experiences. I have a background in design and technology, which allows me to bridge the gap between aesthetics and functionality.
+        </p>
+        <br>
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML, CSS, React</li>
+            <li>UI/UX Design</li>
+            <li>Responsive Web Design</li>
+            <li>Figma and Adobe XD</li>
+        </ul>
+        <br>
+        <h3>Hobbies</h3>
+        <p>In my free time, I enjoy:</p>
+        <ul>
+            <li>Exploring new design trends</li>
+            <li>Playing video games</li>
+            <li>Hiking and outdoor activities</li>
+            <li>Photography</li>
+        </ul>
+    </section>
+
+
+<!-- section of contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <a href="mailto:hayatmusa3229@gmail.com" target="_blank">Email</a>
+        <a href="https://www.linkedin.com/in/hayatmusa/" target="_blank">linkdin</a>
+        <a href="https://github.com/hayatina" target="_blank">Github</a>
+        <a href="https://x.com/hayatina33" target="_blank">Tiwtter</a>
+    </section>
+
+
+<!-- footer -->
+<footer><p>&copy; 2024 Hayat Musa</p></footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggle = document.createElement('button');
+        toggle.innerText = 'Dark Mode';
+        toggle.style.margin = '1rem';
+        toggle.style.padding = '0.5rem 1rem';
+        toggle.style.cursor = 'pointer';
+        toggle.onclick = () => document.body.classList.toggle('dark-mode');
+        document.body.insertBefore(toggle, document.body.firstChild);
+    });
+</script>
+ 
+
+</body>
+</html>
